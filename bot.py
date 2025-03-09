@@ -4,12 +4,15 @@ import datetime
 from discord.ext import commands, tasks
 import os
 import logging
+from dotenv import load_dotenv
 
 # Configure logging
 logging.basicConfig(level=logging.INFO)
 
+load_dotenv()  # Load environment variables from .env
+
 # Replace with your bot's token
-TOKEN = os.getenv('DISCORD_BOT_TOKEN')  # Use environment variable for token
+TOKEN = os.getenv("DISCORD_BOT_TOKEN")  # Retrieve token securely
 
 # Bot setup with necessary intents
 intents = discord.Intents.default()

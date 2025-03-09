@@ -1,0 +1,10 @@
+# Ignore Python environment files
+__pycache__/
+venv/
+env/
+
+# Ignore bot token file
+.env
+
+# Ignore cache/logs
+*.log
